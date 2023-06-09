@@ -1,0 +1,20 @@
+import styled from "styled-components"
+import { seatColors } from "../../constants/colors"
+
+export const SeatItem = styled.div`
+    border: 1px solid ${props => seatColors[props.status].border};
+    background-color: ${props => seatColors[props.status].background};
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    font-family: 'Roboto';
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 3px;
+`
+
+// Os dois códigos abaixo fazem A MESMA COISA!!
+// seatColors.available.background
+// seatColors["available"].background
